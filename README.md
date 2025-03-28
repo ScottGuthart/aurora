@@ -73,7 +73,7 @@ The site is configured for deployment on Vercel. Simply connect your GitHub repo
 
 ## Contributing
 
-This is a private project for Aurora Intelligence. Please contact Dr. Sam Goodkind for any inquiries.
+This is a private project for Aurora Intelligence. Please contact Sam Goodkind for any inquiries.
 
 ## License
 

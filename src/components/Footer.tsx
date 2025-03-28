@@ -1,80 +1,67 @@
 import { Link } from 'react-router-dom'
-import { Twitter, Linkedin, Github } from 'lucide-react'
-
-const navigation = {
-  main: [
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Philosophy', href: '/philosophy' },
-  ],
-  social: [
-    {
-      name: 'Twitter',
-      href: '#',
-      icon: Twitter,
-    },
-    {
-      name: 'LinkedIn',
-      href: '#',
-      icon: Linkedin,
-    },
-    {
-      name: 'GitHub',
-      href: '#',
-      icon: Github,
-    },
-  ],
-}
+import { AuroraLogo } from '@/components/AuroraLogo'
+import { createEmailLink } from '@/lib/utils'
 
 export function Footer() {
   return (
-    <footer className="bg-background">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="text-xl font-bold text-dawn-slate">
-              Aurora
-            </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
-              AI doesn't invent answers—it reflects truths humanity already knows.
+    <footer className="border-t bg-background">
+      <div className="container py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {/* Brand Section */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <AuroraLogo className="h-8 w-8" />
+              <span className="font-bold text-xl">Aurora</span>
+            </div>
+            <p className="text-sm text-muted-foreground max-w-md">
+              AI that amplifies human wisdom. Sam Goodkind and our team help visionaries unlock new possibilities in research, workflow, and decision-making.
             </p>
           </div>
-          <div>
-            <h3 className="text-sm font-semibold text-foreground">Navigation</h3>
-            <ul className="mt-4 space-y-4">
-              {navigation.main.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className="text-sm text-muted-foreground hover:text-dawn-slate"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-semibold text-foreground">Connect</h3>
-            <ul className="mt-4 space-y-4">
-              {navigation.social.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-dawn-slate"
-                  >
-                    <item.icon className="h-4 w-4" />
-                    <span>{item.name}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="font-semibold">Quick Links</h3>
+            <nav className="flex flex-col space-y-2">
+              <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                About
+              </Link>
+              <Link to="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Services
+              </Link>
+              <Link to="/philosophy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Philosophy
+              </Link>
+              <a 
+                href={createEmailLink(
+                  "Aurora Intelligence Inquiry",
+                  "I'm interested in learning more about Aurora Intelligence and how we could potentially work together."
+                )}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Contact Us
+              </a>
+            </nav>
           </div>
         </div>
-        <div className="mt-12 border-t border-border pt-8">
-          <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Aurora Intelligence. All rights reserved.
-          </p>
+
+        {/* Bottom Bar */}
+        <div className="mt-8 pt-8 border-t">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Aurora Intelligence. All rights reserved.
+            </p>
+            <div className="flex space-x-4">
+              <a 
+                href={createEmailLink(
+                  "Aurora Intelligence Inquiry",
+                  "I'm interested in learning more about Aurora Intelligence and how we could potentially work together."
+                )}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

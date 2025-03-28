@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Button } from '@/components/ui/button'
-import { useToast } from '@/components/ui/use-toast'
 import { DawnGradient } from '@/components/DawnGradient'
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const testimonials = [
@@ -48,7 +47,6 @@ const itemVariants = {
 }
 
 export function Home() {
-  const { toast } = useToast()
   const [heroRef, heroInView] = useInView({
     triggerOnce: true,
     threshold: 0.1

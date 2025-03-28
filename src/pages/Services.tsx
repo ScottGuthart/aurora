@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Button } from '@/components/ui/button'
-import { Brain, Sparkles, Shield, Quote } from 'lucide-react'
+import { Brain, Sparkles, Shield } from 'lucide-react'
 import { createEmailLink } from '@/lib/utils'
 import { DawnGradient } from '@/components/DawnGradient'
 

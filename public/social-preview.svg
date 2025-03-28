@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Background Gradients -->
+  <g opacity="0.2">
+    <circle cx="300" cy="315" r="400" fill="url(#gradient-1)"/>
+    <circle cx="900" cy="315" r="400" fill="url(#gradient-2)"/>
+  </g>
+  
+  <!-- Aurora Logo -->
+  <g transform="translate(100, 165) scale(0.6)">
+    <circle cx="256" cy="256" r="240" fill="url(#gradient-bg)"/>
+    <path d="M256 16C384 16 480 112 480 240C480 368 384 464 256 464C128 464 32 368 32 240C32 112 128 16 256 16Z" 
+          fill="url(#gradient-surface)"/>
+    <path d="M256 64C384 64 448 128 448 256C448 384 384 448 256 448C128 448 64 384 64 256C64 128 128 64 256 64Z" 
+          fill="url(#gradient-aurora)"/>
+    <circle cx="256" cy="256" r="160" fill="url(#gradient-inner)"/>
+    <path d="M256 96L384 384H128L256 96Z" fill="white" fill-opacity="0.95"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="315" fill="white" font-family="Inter" font-size="72" font-weight="700">
+    Aurora Intelligence
+  </text>
+  <text x="400" y="385" fill="#8B8BFF" font-family="Inter" font-size="32" font-weight="500">
+    AI that amplifies human wisdom
+  </text>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="gradient-1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B8BFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8B8BFF" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="gradient-2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F4CAA9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F4CAA9" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="gradient-bg" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    
+    <linearGradient id="gradient-surface" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#8B8BFF" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#F4CAA9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#BFB9FF" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="gradient-aurora" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#8B8BFF" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#F4CAA9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#BFB9FF" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <radialGradient id="gradient-inner" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg> 

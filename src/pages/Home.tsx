@@ -5,24 +5,6 @@ import { DawnGradient } from '@/components/DawnGradient'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const testimonials = [
-  {
-    quote: "Sam and his team helped us develop an AI system that analyzes thousands of research papers to identify promising drug combinations. What amazed me was how it surfaced connections our team hadn't considered, leading to two breakthrough discoveries in our cancer research.",
-    author: "Dr. Rachel K.",
-    role: "Director of Research, BioTech Institute"
-  },
-  {
-    quote: "As a judge handling complex cases, I was drowning in precedents and statutes. Sam's team created an AI system that helps me see patterns across similar cases and relevant laws. It's like having centuries of judicial wisdom at my fingertips while preserving my discretion.",
-    author: "Hon. Marcus B.",
-    role: "Federal Court Judge"
-  },
-  {
-    quote: "I was hesitant about AI in education, but Sam showed me how it could help identify struggling students early. Now our teachers can spot learning gaps in real-time and provide targeted support. Our student success rate has improved by 40%.",
-    author: "Patricia M.",
-    role: "High School Principal"
-  }
-]
-
 // Animation variants for staggered animations
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -107,68 +89,6 @@ export function Home() {
             className="absolute bottom-1/3 -right-12 w-32 h-32 bg-gradient-to-r from-sky-200/30 to-rose-200/30 dark:from-sky-500/20 dark:to-rose-500/20 rounded-full blur-xl"
           />
         </div>
-      </section>
-
-      {/* Client Reflections */}
-      <section className="container mx-auto px-4 py-16 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="max-w-5xl mx-auto"
-        >
-          <h2 className="text-3xl font-bold mb-12 text-center text-foreground">
-            Client Reflections
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="group relative"
-              >
-                {/* Card Background */}
-                <div className="absolute inset-0 rounded-3xl bg-card shadow-sm border border-border" />
-                
-                {/* Content Container */}
-                <div className="relative p-8 flex flex-col">
-                  {/* Quote Icon */}
-                  <div className="mb-6">
-                    <div className="p-3 bg-blue-50 dark:bg-blue-950 rounded-2xl inline-block">
-                      <svg className="w-6 h-6 text-[#8B8BFF]" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* Quote Text */}
-                  <blockquote className="text-muted-foreground mb-6 flex-grow">
-                    "{testimonial.quote}"
-                  </blockquote>
-
-                  {/* Author */}
-                  <div className="flex items-center space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="h-12 w-12 rounded-full bg-blue-50 dark:bg-blue-950 flex items-center justify-center">
-                        <span className="text-[#8B8BFF] font-semibold text-lg">
-                          {testimonial.author.charAt(0)}
-                        </span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="font-medium text-foreground">
-                        {testimonial.author}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {testimonial.role}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </section>
     </div>
   )

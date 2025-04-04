@@ -1,45 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Button } from '@/components/ui/button'
-import { Brain, Sparkles, Shield } from 'lucide-react'
 import { createEmailLink } from '@/lib/utils'
 import { DawnGradient } from '@/components/DawnGradient'
-
-const services = [
-  {
-    title: "AI-Enhanced Professional Research",
-    description: "Discover how AI can transform your daily work and decision-making. Sam Goodkind and our team help you harness AI's potential in ways that feel natural and empowering - from analyzing years of case law in minutes to uncovering patterns in complex medical histories.",
-    icon: Brain,
-    emailSubject: "AI Research Enhancement Inquiry",
-    emailBody: "I'm interested in learning how AI could transform my work and decision-making process. Could you share some examples of how your AI research enhancement service could help enhance my expertise?",
-    testimonial: {
-      quote: "I was skeptical at first, but Sam and the team showed me how AI could analyze decades of my legal cases in minutes. Now I can instantly find relevant precedents and craft stronger arguments. It's like having a brilliant associate who's read every case I've ever handled.",
-      author: "Richard M., Corporate Attorney"
-    }
-  },
-  {
-    title: "Custom AI Workflow Design",
-    description: "We create AI solutions that work the way you do. Whether you're reviewing patient histories, analyzing market trends, or exploring research papers, Sam's team ensures the technology adapts to your workflow - not the other way around.",
-    icon: Sparkles,
-    emailSubject: "Custom AI Workflow Inquiry",
-    emailBody: "I'd like to explore how we could integrate AI in a way that feels natural and enhances our capabilities. Could you share examples of how you've helped others?",
-    testimonial: {
-      quote: "Sam helped me set up an AI system that automatically summarizes my patients' complex medical histories and flags potential drug interactions. What used to take hours now takes minutes, and I can focus more on patient care. It's transformed my practice.",
-      author: "Dr. Sarah P., Internal Medicine"
-    }
-  },
-  {
-    title: "Professional AI Safeguards",
-    description: "Navigate AI's possibilities with confidence and clarity. Sam and our team ensure your AI implementation respects privacy, maintains human judgment, and enhances rather than replaces your expertise - all while amplifying your capabilities.",
-    icon: Shield,
-    emailSubject: "Professional AI Safeguards Inquiry",
-    emailBody: "I want to ensure our AI implementation respects human values and wisdom. Could you tell me more about your approach to ethical AI integration?",
-    testimonial: {
-      quote: "As a therapist, I was concerned about AI and patient confidentiality. Sam's team developed a system that helps me identify patterns in session notes while maintaining absolute privacy. It's helped me be more proactive in my treatment plans while upholding the highest ethical standards.",
-      author: "Jennifer L., Clinical Psychologist"
-    }
-  },
-]
 
 export function Services() {
   const [ref, inView] = useInView({

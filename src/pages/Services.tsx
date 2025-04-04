@@ -77,54 +77,119 @@ export function Services() {
       {/* Services Grid */}
       <section className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group relative"
-            >
-              {/* Card Background */}
-              <div className="absolute inset-0 rounded-3xl bg-card shadow-sm border border-border" />
-              
-              {/* Content Container */}
-              <div className="relative p-8 flex flex-col items-center text-center">
-                {/* Icon Container */}
-                <div className="relative mb-6">
-                  <div className="p-4 rounded-2xl bg-blue-50 dark:bg-blue-950">
-                    <service.icon className="w-8 h-8 text-[#8B8BFF]" />
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  {service.title}
-                </h3>
-                
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {service.description}
-                </p>
+          {/* AI Liaison Consulting */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0 }}
+            viewport={{ once: true }}
+            className="relative p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+          >
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">AI Liaison Consulting</h3>
+            <ul className="space-y-4 text-muted-foreground mb-6">
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Personalized psychometric profiling (MBTI, Enneagram) to customize AI tools to your style</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Intuitive guidance and tailored teaching, bridging the gap between AI capabilities and human needs</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Ongoing insights to empower you in leveraging AI tools independently and confidently</span>
+              </li>
+            </ul>
+          </motion.div>
 
-                {/* Testimonial */}
-                <div className="mb-8 text-sm">
-                  <div className="italic text-muted-foreground mb-2">
-                    "{service.testimonial.quote}"
-                  </div>
-                  <div className="text-muted-foreground/80">
-                    — {service.testimonial.author}
-                  </div>
-                </div>
-                
-                <Button 
-                  className="bg-[#8B8BFF] hover:bg-[#7878FF] text-white transition-colors duration-300"
-                  asChild
-                >
-                  <a href={createEmailLink(service.emailSubject, service.emailBody)}
-                     className="px-6 py-2"
-                  >
-                    Learn More
-                  </a>
-                </Button>
-              </div>
-            </div>
-          ))}
+          {/* Intuitive Coaching */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="relative p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+          >
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">Intuitive Coaching</h3>
+            <ul className="space-y-4 text-muted-foreground mb-6">
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Practical, insightful personal coaching for creatives, executives, and high-performers</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Utilizing MBTI and Enneagram frameworks to enhance emotional intelligence and strategic thinking</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Emphasis on autonomy, emotional clarity, and strategic personal growth</span>
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Personalized AI Integration Workshops */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="relative p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+          >
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">AI Integration Workshops</h3>
+            <ul className="space-y-4 text-muted-foreground mb-6">
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Group or individual workshops teaching intuitive, effective use of AI tools</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Tailored to unique cognitive and emotional styles</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-dawn-slate mr-2">•</span>
+                <span>Ideal for creative teams, executive leadership, and professionals in transition</span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+
+        {/* Differentiators Section */}
+        <div className="mt-16 text-center">
+          <h2 className="text-3xl font-bold mb-8 text-foreground">Why Aurora Intelligence?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Personalized, Human-Centric AI</h3>
+              <p className="text-muted-foreground">Custom-fit AI integration specifically tailored to your personality and cognitive style</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Intuitive Teaching Style</h3>
+              <p className="text-muted-foreground">Leveraging deep emotional intelligence and expert teaching ability to ensure understanding and practical mastery</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="p-6 bg-card backdrop-blur-sm rounded-3xl shadow-sm border border-border"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Empowering Autonomy</h3>
+              <p className="text-muted-foreground">We don't just implement AI—we empower you to independently understand, adopt, and confidently apply AI tools</p>
+            </motion.div>
+          </div>
         </div>
       </section>
 

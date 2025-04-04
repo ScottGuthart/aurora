@@ -69,13 +69,13 @@ export function Home() {
               variants={itemVariants}
               className="aurora-title text-4xl md:text-7xl font-bold mb-8 leading-normal tracking-tight"
             >
-              Aurora Intelligence
+              AI Clarified, Human Amplified
             </motion.h1>
             <motion.p 
               variants={itemVariants}
               className="text-xl md:text-3xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed max-w-3xl mx-auto"
             >
-              Transform your expertise with AI that amplifies human wisdom. Sam Goodkind and our team help visionaries like you unlock new possibilities.
+              Aurora Intelligence guides you to harness the intuitive power of AI through personalized coaching, clear teaching, and intuitive insight. We empower your autonomy, creativity, and growth.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Button

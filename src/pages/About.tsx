@@ -35,10 +35,10 @@ export function About() {
           className="text-center z-10 px-4"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            Meet Sam Goodkind
+            About Aurora Intelligence
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A visionary in AI and human potential, Sam Goodkind bridges the gap between human intuition and artificial intelligence.
+            Bridging the human-AI divide with clarity and intuitive wisdom
           </p>
         </motion.div>
       </section>
@@ -48,13 +48,13 @@ export function About() {
         <div className="max-w-3xl mx-auto">
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Sam Goodkind's journey into AI began with a simple observation: the most powerful AI systems don't replace human expertise—they amplify it. With a background in cognitive science and machine learning, Sam has spent years studying how AI can enhance rather than replace human capabilities.
+              Aurora Intelligence was founded to bridge the human-AI divide, bringing clarity and intuitive wisdom to the rapidly evolving intelligence landscape. AI, as a learning machine, absorbs patterns from human communication—speech, text, forums, scripts—and mirrors them back to us.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              At Aurora Intelligence, Sam leads a team dedicated to creating AI solutions that respect and enhance human wisdom. Whether working with legal professionals analyzing case law, medical practitioners reviewing patient histories, or researchers exploring complex datasets, Sam ensures that AI serves as a powerful tool for human expertise.
+              By seamlessly integrating psychological insights (MBTI, Enneagram) with AI expertise, we enable clients to harness technology as an intuitive partner in their journey toward growth, creativity, and autonomy.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Sam's approach combines deep technical knowledge with a profound understanding of human cognition and decision-making. This unique perspective allows Aurora Intelligence to create AI solutions that feel natural and intuitive, amplifying human capabilities without disrupting established workflows.
+              Our approach recognizes that AI is not just technology—it's an algorithmic reflection of human intuition, creativity, and insight. By learning from the collective wisdom of human expression, AI provides a powerful mirror that amplifies your unique human potential.
             </p>
           </div>
         </div>
@@ -76,11 +76,11 @@ export function About() {
                   <Brain className="w-8 h-8 text-[#8B8BFF]" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">
-                  Enhance Potential
+                  Personalized Approach
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                We develop AI systems that enhance and amplify human potential while maintaining ethical principles.
+                We customize AI integration to your unique personality and cognitive style through psychometric profiling.
               </p>
             </div>
             
@@ -90,11 +90,11 @@ export function About() {
                   <Scale className="w-8 h-8 text-[#8B8BFF]" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">
-                  Deepen Understanding
+                  Intuitive Teaching
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Our technology advances capabilities while deepening human understanding and insight.
+                Our clear, intuitive teaching style ensures deep understanding and practical mastery of AI tools.
               </p>
             </div>
 
@@ -104,11 +104,11 @@ export function About() {
                   <Sparkles className="w-8 h-8 text-[#8B8BFF]" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">
-                  Collective Wisdom
+                  Empowered Growth
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                We demonstrate that the most powerful AI solutions mirror and magnify humanity's collective wisdom.
+                We empower you to independently understand and confidently apply AI tools in your journey of growth.
               </p>
             </div>
           </div>

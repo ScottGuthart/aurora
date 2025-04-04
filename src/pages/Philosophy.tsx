@@ -31,7 +31,7 @@ export function Philosophy() {
               Our Philosophy
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              At Aurora, we believe that AI should serve as a mirror, reflecting and amplifying the collective wisdom of humanity
+              AI is not just technology—it's an algorithmic reflection of human intuition, creativity, and insight. By learning from the collective wisdom of human expression, AI provides a powerful mirror that amplifies your unique human potential.
             </p>
           </motion.div>
         </div>
@@ -47,13 +47,13 @@ export function Philosophy() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl font-bold text-foreground mb-6">
-                The Dawn Metaphor
+                Human-Centric AI Integration
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Just as dawn brings light to reveal what was always there, our AI systems illuminate existing knowledge rather than creating new realities.
+                At Aurora Intelligence, we guide you to harness the intuitive power of AI through personalized coaching, clear teaching, and intuitive insight. Our role isn't simply to implement AI—it's to help you deeply understand and integrate it.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                We believe in the power of reflection—not invention. Our approach helps organizations discover insights that were always present, just waiting to be seen in a new light.
+                By seamlessly integrating psychological insights with AI expertise, we empower your autonomy, creativity, and growth. Our approach is deeply personalized, considering your unique cognitive and emotional style.
               </p>
               <TooltipProvider>
                 <Tooltip>
@@ -65,14 +65,14 @@ export function Philosophy() {
                     >
                       <a href={createEmailLink(
                         "Aurora Philosophy Inquiry",
-                        "I'm interested in learning more about Aurora's philosophy and reflective AI approach. Could you please provide more information about your framework and how it could benefit our organization?"
+                        "I'm interested in learning more about Aurora's human-centric AI approach. Could you please provide more information about how you integrate psychological insights with AI expertise?"
                       )}>
                         Learn More
                       </a>
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Contact us to learn more about our reflective AI framework</p>
+                    <p>Contact us to learn more about our human-centric AI approach</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -92,25 +92,25 @@ export function Philosophy() {
                   <li className="flex items-start">
                     <span className="text-dawn-slate mr-2">•</span>
                     <span className="text-muted-foreground">
-                      Reflect, don't invent
+                      Personalized AI Integration: Custom-fit solutions tailored to your unique style
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-dawn-slate mr-2">•</span>
                     <span className="text-muted-foreground">
-                      Amplify human wisdom
+                      Intuitive Teaching: Clear guidance ensuring practical understanding and mastery
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-dawn-slate mr-2">•</span>
                     <span className="text-muted-foreground">
-                      Maintain ethical standards
+                      Empowered Growth: Supporting your journey toward independent AI mastery
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-dawn-slate mr-2">•</span>
                     <span className="text-muted-foreground">
-                      Foster collective understanding
+                      Psychological Integration: Using MBTI and Enneagram insights for deeper understanding
                     </span>
                   </li>
                 </ul>
